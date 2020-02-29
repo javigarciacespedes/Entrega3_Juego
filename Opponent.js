@@ -65,6 +65,9 @@ shoot () {
     die() {
         
         if (!this.dead) {
+            this.game.score++;
+            document.getElementById("scoreli").innerHTML="Score:" + (this.game.score);
+
             setTimeout(() => {
                 this.game.removeOpponent();
             }, 2000);

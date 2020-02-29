@@ -1,6 +1,8 @@
 const OPPONENT_HEIGHT = 5,
     OPPONENT_PICTURE = "assets/malo.png",
     OPPONENT_PICTURE_DEAD = "assets/malo_muerto.png",
+    BOSS_PICTURE = "assets/jefe.png",
+    BOSS_PICTURE_DEAD = "assets/jefe_muerto.png",
     OPPONENT_SPEED = 5,
     OPPONENT_WIDTH = 5,
     GAME_OVER_PICTURE = "assets/game_over.png",

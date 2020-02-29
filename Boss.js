@@ -10,9 +10,9 @@ class Boss extends Character {
             width = OPPONENT_WIDTH * game.width / 100,
             x = getRandomNumber(game.width - width / 2),
             y = 0,
-            speed = OPPONENT_SPEED,
-            myImage = OPPONENT_PICTURE,
-            myImageDead = OPPONENT_PICTURE_DEAD;
+            speed = 2*OPPONENT_SPEED,
+            myImage = BOSS_PICTURE,
+            myImageDead = BOSS_PICTURE_DEAD;
 
         super(game, width, height, x, y, speed, myImage, myImageDead);
         this.direction = "R"; // Dirección hacia la que se mueve el oponente
