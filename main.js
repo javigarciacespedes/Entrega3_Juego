@@ -19,6 +19,8 @@ const OPPONENT_HEIGHT = 5,
     SHOT_SPEED = 20,
     SHOT_PICTURE_PLAYER = "assets/shot1.png",
     SHOT_PICTURE_OPPONENT = "assets/shot2.png",
+    LIVES = 3,
+    YOU_WIN_PICTURE = "assets/you_win.png",
     SHOT_WIDTH = 1.5;
 
 function getRandomNumber (range) {

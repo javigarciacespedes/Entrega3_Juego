@@ -60,7 +60,7 @@ shoot () {
     }
 
     /**
-     * Mata al oponente
+     * Mata al jefe
      */
     die() {
         

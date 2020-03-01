@@ -199,8 +199,13 @@ class Game {
      */
     endGame () {
         this.ended = true;
-        let gameOver = new Entity(this, this.width / 2, "auto", this.width / 4, this.height / 4, 0, GAME_OVER_PICTURE)
+        let gameOver = new Entity(this, this.width / 2, "auto", this.width / 4, this.height / 4, 0, YOU_WIN_PICTURE);
         gameOver.render();
+        //this.opponent = new Boss(this);
+        if(Boss.removeOpponent()){
+            let wonGame = new Entity(this, this.width / 2, "auto", this.width / 4, this.height / 4, 0, YOU_WIN_PICTURE);
+            wonGame.render();
+        }  
     }
 
     /**

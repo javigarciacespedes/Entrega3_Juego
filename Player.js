@@ -48,7 +48,31 @@ class Player extends Character {
      * Mata al jugador
      */
     die() {
-        if (!this.dead) {
+        if(!this.dead /*&& this.Player.lives===3*/){
+            this.lives--;
+            document.getElementById("livesli").innerHTML="Lives:" + this.lives;
+            this.dead = true;
+            setTimeout(() => {
+                this.PLAYER_PICTURE_DEAD;
+                this.game.start();
+            }, 2000);
+            this.dead = false;
+        }
+       /*if (!this.dead && this.Player.lives===2){
+            this.dead = true;
+            this.lives--;
+            document.getElementById("livesli").innerHTML="Lives:2";
+            setTimeout(() => {
+                this.PLAYER_PICTURE_DEAD;
+                this.game.start();
+            }, 2000);
+            this.dead=false;
+        }*/
+        else{
+
+    
+       // if (!this.dead && this.Player.lives===1) {
+        //    document.getElementById("livesli").innerHTML="lives:0";
             setTimeout(() => {
                 this.game.endGame();
             }, 2000);
