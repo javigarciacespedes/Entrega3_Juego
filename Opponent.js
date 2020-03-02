@@ -68,7 +68,7 @@ shoot () {
             document.getElementById("scoreli").innerHTML="Score:" + (this.game.score+1);
             setTimeout(() => {
                 this.game.removeOpponent();
-                    this.opponent = new Boss(this);
+                game.opponent = new Boss(game);
             }, 2000);
             super.die();
         }
